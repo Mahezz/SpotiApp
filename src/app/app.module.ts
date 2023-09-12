@@ -3,14 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import {Router, RouterModule } from '@angular/router';
 import { routes } from './app-routing.module'
 
+//Modules
 import {HttpClientModule } from '@angular/common/http'
-
 import { AppRoutingModule } from './app-routing.module';
+
+//Components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
 import { ArtistaComponent } from './components/artista/artista.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
+
+//Services
+import { SpotifyService } from './service/api.service';
 
 @NgModule({
   declarations: [
